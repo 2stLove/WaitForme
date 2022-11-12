@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+#audio-control {
+  cursor:pointer;
+  padding: 10px 20px;
+  background:#000;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+#myBackGround {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+<video loop autoplay muted id="myVideo">
+  <source src="Assests/sensitivity.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+  <script>
+    function ControlSound() {
+      const myVideo = document.getElementById("myVideo");
+	  if (myVideo.muted == false) {    
+		myVideo.muted = true;
+		}
+		else {
+		myVideo.muted = false;
+		};
+    }
+  </script>
+
+    <script language="JavaScript">
+      
+       window.onload = function () {
+           document.addEventListener("contextmenu", function (e) {
+               e.preventDefault();
+           }, false);
+           document.addEventListener("keydown", function (e) {
+               //document.onkeydown = function(e) {
+               // "I" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                   disabledEvent(e);
+               }
+               // "J" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                   disabledEvent(e);
+               }
+               // "S" key + macOS
+               if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                   disabledEvent(e);
+               }
+               // "U" key
+               if (e.ctrlKey && e.keyCode == 85) {
+                   disabledEvent(e);
+               }
+               // "F12" key
+               if (event.keyCode == 123) {
+                   disabledEvent(e);
+               }
+           }, false);
+           function disabledEvent(e) {
+               if (e.stopPropagation) {
+                   e.stopPropagation();
+               } else if (window.event) {
+                   window.event.cancelBubble = true;
+               }
+               e.preventDefault();
+               return false;
+           }
+       }
+//edit: removed ";" from last "}" because of javascript error
+</script>
+
+
+<div class="content">
+
+<button id="myBtn" onclick="ControlSound()">소리 켜기</button>
+<h1>김민준의 저장리스트</h1>
+<p>쓸만한 거 모아놧음.</p>
+<p>RIP Form 2022.10.24 ~ 2023.??.??
+Will Come Back Later..</p>
+<p><a href="https://www.instagram.com/_179.minxx">인스타그램</a></p>
+<p><a href="https://www.facebook.com/178.Minxxx">페이스북</a></p>
+<p><a href="https://toss.me/179minxx/">토스 프로필</a></p>
+<p><a href="https://asked.kr/Ramenop12">에스크</a></p>
+<p><a href="https://www.youtube.com/playlist?list=PL7p1O58nIC6REzp4XDSdCWhhObb34S5lZ">플레이리스트</a></p>
+</div>
+
+
+</body>
+</html>
+
+
+
+
