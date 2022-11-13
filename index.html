@@ -60,26 +60,44 @@ body {
 
 .button {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
+  border-radius: 4px;
+  background-color: #1E66F6;
   border: none;
-  border-radius: 19px;
-  box-shadow: 0 9px #999;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 1px #666;
-  transform: translateY(2px);
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 
 </style>
 
@@ -115,15 +133,15 @@ body {
 <div class="content">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="Assests/Query.js"></script>
-<button id="button" onclick="ControlSound()">소리 켜기</button>
+<button class="button" onclick="ControlSound()">소리 켜기</button>
 <h1>김민준의 저장리스트</h1>
 <p>쓸만한 거 모아놧음.</p>
-<button id="button" onclick=" window.open('https://www.youtube.com/playlist?list=PL7p1O58nIC6REzp4XDSdCWhhObb34S5lZ')"> 플레이리스트</button>
-<button id="button" onclick=" window.open('https://www.instagram.com/_179.minxx')">인스타그램</button>
-<button id="button" onclick=" window.open('https://www.facebook.com/178.Minxxx')">페이스북</button>
-<button id="button" onclick=" window.open('https://toss.me/179minxx/')">토스 프로필</button>
-<button id="button" onclick=" window.open('https://asked.kr/Ramenop12')">에스크</button>
-<button id="button" onclick=" window.open('https://minxx.kro.kr/admin')">관리자 페이지 (외부인 출입금지 자동 로그)</button>
+<button class="button" onclick=" window.open('https://www.youtube.com/playlist?list=PL7p1O58nIC6REzp4XDSdCWhhObb34S5lZ')"> 플레이리스트</button>
+<button class="button" onclick=" window.open('https://www.instagram.com/_179.minxx')">인스타그램</button>
+<button class="button" onclick=" window.open('https://www.facebook.com/178.Minxxx')">페이스북</button>
+<button class="button" onclick=" window.open('https://toss.me/179minxx/')">토스 프로필</button>
+<button class="button" onclick=" window.open('https://asked.kr/Ramenop12')">에스크</button>
+<button class="button" onclick=" window.open('https://minxx.kro.kr/admin')">관리자 페이지 (외부인 출입금지 자동 로그)</button>
 </div>
 
 
