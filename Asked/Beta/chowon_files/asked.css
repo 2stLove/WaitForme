@@ -78,7 +78,7 @@ body{
     background-color: #fff;
     display: inline-block;
     margin-left: 2;
-    background-image: url(./chowon_files/img/chkimg.png);
+    background-image: url(./img/chkimg.png);
     background-size: 10px;
 }
 
@@ -91,7 +91,7 @@ body{
     width: 20px;
     height: 20px;
 	padding-bottom:10px;
-	background-image: url(./chowon_files/img/close_pto.png);
+	background-image: url(./img/close_pto.png);
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -233,7 +233,7 @@ body{
 }
 
 #joinBtn{
- background: url(./chowon_files/img/joinBtn.png) center;
+ background: url(./img/joinBtn.png) center;
  float: left;
  background-repeat:no-repeat;
  background-size: 30px 30px;
@@ -300,7 +300,7 @@ body{
     background-color: #fff;
     display: inline-block;
     margin-left: 2;
-    background-image: url(./chowon_files/img/userimage.png);
+    background-image: url(./img/userimage.png);
     background-size: 40px 40px;
     position: relative;
     left: -18px;
@@ -319,7 +319,7 @@ body{
 
 
 .fbico {
-    background: url(./chowon_files/img/fbico.png);
+    background: url(./img/fbico.png);
     background-repeat: no-repeat;
     background-size: 25px 25px,30px 30px;
     background-position: 13;
@@ -330,7 +330,7 @@ body{
 }
 
 .ico0{
-	background: url(./chowon_files/img/setting.png);
+	background: url(./img/setting.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 210;
@@ -340,7 +340,7 @@ body{
 
 
 .ico1 {
-    background: url(./chowon_files/img/ico1.png);
+    background: url(./img/ico1.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -352,7 +352,7 @@ body{
 }
 
 .ico2 {
-    background: url(./chowon_files/img/ico2.png);
+    background: url(./img/ico2.png);
     background-repeat: no-repeat;
     background-size: 23px 30px;
     background-position: 13;
@@ -363,7 +363,7 @@ body{
 }
 
 .ico3 {
-    background: url(./chowon_files/img/ico3.png);
+    background: url(./img/ico3.png);
     background-repeat: no-repeat;
     background-size: 25px 25px,30px 30px;
     background-position: 13;
@@ -375,7 +375,7 @@ body{
 }
 
 .ico4 {
-    background: url(./chowon_files/img/ico4.png);
+    background: url(./img/ico4.png);
     background-repeat: no-repeat;
     background-size: 25px 25px,30px 30px;
     background-position: 13;
@@ -388,7 +388,7 @@ body{
 
 
 .ico5 {
-    background: url(./chowon_files/img/ico5.png);
+    background: url(./img/ico5.png);
     background-repeat: no-repeat;
     background-size: 25px 20px,30px 30px;
     background-position: 13;
@@ -401,7 +401,7 @@ body{
 
 
 .ico6 {
-    background: url(./chowon_files/img/ico6.png);
+    background: url(./img/ico6.png);
     background-repeat: no-repeat;
     background-size: 25px 25px,30px 30px;
     background-position: 13;
@@ -414,7 +414,7 @@ body{
 
 
 .arrow_click {
-    background: url(./chowon_files/img/ico_arrow_click.png) center;
+    background: url(./img/ico_arrow_click.png) center;
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 210;
@@ -422,7 +422,7 @@ body{
 
 
 .makarong_menu {
-    background: url(./chowon_files/img/ico_arrow.png);
+    background: url(./img/ico_arrow.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 210;
@@ -462,7 +462,7 @@ body{
 
 
 .nico1 {
-	background: url(./chowon_files/img/nico/nico1.png);
+	background: url(./img/nico/nico1.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -474,7 +474,7 @@ body{
 }
 
 .nico2 {
-	background: url(./chowon_files/img/nico/nico2.png);
+	background: url(./img/nico/nico2.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -486,7 +486,7 @@ body{
 }
 
 .nico3 {
-	background: url(./chowon_files/img/nico/nico3.png);
+	background: url(./img/nico/nico3.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -497,7 +497,7 @@ body{
     
 }
 .nico4 {
-	background: url(./chowon_files/img/nico/nico4.png);
+	background: url(./img/nico/nico4.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -509,7 +509,7 @@ body{
 }
 
 .nico5 {
-	background: url(./chowon_files/img/nico/nico5.png);
+	background: url(./img/nico/nico5.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: 10;
@@ -589,7 +589,7 @@ body{
 }
 
 #backBtn{
- background: url(./chowon_files/img/backBtn.png) center;
+ background: url(./img/backBtn.png) center;
  float: left;
  background-repeat:no-repeat;
  background-size: 23px 23px;
@@ -603,7 +603,7 @@ body{
 }
 
 #myLogin{
- background: url(./chowon_files/img/myLogin.png) center;
+ background: url(./img/myLogin.png) center;
  float: right;
  background-repeat:no-repeat;
  background-size: 30px 30px;
@@ -617,7 +617,7 @@ body{
 }
 
 #new_noti{
- background: url(./chowon_files/img/new_noti.png) center;
+ background: url(./img/new_noti.png) center;
  float: right;
  background-repeat:no-repeat;
  background-size: 30px 30px;
@@ -647,7 +647,7 @@ body{
 
 
 #menuBtn{
-    background: url(./chowon_files/img/menuBtn.png) center;
+    background: url(./img/menuBtn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 24px 17px;
@@ -662,7 +662,7 @@ body{
 }
 
 .post_ask_close{
-    background: url(./chowon_files/img/post_ask_close.png) center;
+    background: url(./img/post_ask_close.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 15px 15px;
@@ -677,7 +677,7 @@ body{
 }
 
 .postaskbtn{
-    background: url(./chowon_files/img/postaskbtn.png) center;
+    background: url(./img/postaskbtn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 60px 35px;
@@ -777,7 +777,7 @@ font-size:12px;
     border-radius: 35px;
     background-color: #fff;
     display: inline-block;
-    background-image: url(./chowon_files/img/userimage.png);
+    background-image: url(./img/userimage.png);
     background-size: 44px 44px;
 }
 
@@ -787,7 +787,7 @@ font-size:12px;
     border-radius: 35px;
     background-color: #EF5350;
     display: inline-block;
-    background-image: url(./chowon_files/img/profile_ca.png);
+    background-image: url(./img/profile_ca.png);
     background-size: 14px 14px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -844,27 +844,27 @@ text-align: center;
 }
 
 .page_share_fb {
-    background: url(./chowon_files/img/fb_share.png) center center no-repeat;
+    background: url(./img/fb_share.png) center center no-repeat;
     background-size: 34px;
 }
 .page_share_tw {
-    background: url(./chowon_files/img/tw_share.png) center center no-repeat;
+    background: url(./img/tw_share.png) center center no-repeat;
     background-size: 34px;
 }
 .page_share_ks {
-    background: url(./chowon_files/img/ks_share.png) center center no-repeat;
+    background: url(./img/ks_share.png) center center no-repeat;
     background-size: 42px;
 }
 .page_share_kt {
-    background: url(./chowon_files/img/kt_share.png) center center no-repeat;
+    background: url(./img/kt_share.png) center center no-repeat;
     background-size: 34px;
 }
 .page_share_sms {
-    background: url(./chowon_files/img/sms_share.png) center center no-repeat;
+    background: url(./img/sms_share.png) center center no-repeat;
     background-size: 34px;
 }
 .page_share_link {
-    background: url(./chowon_files/img/link_share.png) center center no-repeat;
+    background: url(./img/link_share.png) center center no-repeat;
     background-size: 34px;
 }
 /*profile top*/
@@ -908,7 +908,7 @@ text-align: center;
 }
 
 .edit_profile {
-    background: url(./chowon_files/img/profile_edit.png) center;
+    background: url(./img/profile_edit.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 69px;
@@ -1024,7 +1024,7 @@ text-align: center;
     height: 92px;
     position: relative;
     border: 0px;
-    background: url(./chowon_files/img/makarong_post.png);
+    background: url(./img/makarong_post.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 3px;
@@ -1034,7 +1034,7 @@ text-align: center;
 
 
 .makarong_btn {
-    background: url(./chowon_files/img/ask/macaron_png.png) center;
+    background: url(./img/ask/macaron_png.png) center;
     background-repeat: no-repeat;
     background-size: 15px;
     border: none;
@@ -1046,14 +1046,14 @@ text-align: center;
 }
 
 .makarong_up_btn {
-    background: url(./chowon_files/img/ask/macaron-color-png.png) center;
+    background: url(./img/ask/macaron-color-png.png) center;
     background-repeat: no-repeat;
     background-size: 15px;
 }
 
 .makarong_pay_btn {
     -webkit-tap-highlight-color: transparent;
-    background: url(./chowon_files/img/ask/down_png.png) center;
+    background: url(./img/ask/down_png.png) center;
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: 104px;
@@ -1072,7 +1072,7 @@ text-align: center;
 }
 
 .makarong_pay_btn_chk {
-    background: url(./chowon_files/img/ask/up_png.png) center;
+    background: url(./img/ask/up_png.png) center;
     background-repeat: no-repeat;
     background-size: 9px;
     background-position: 104px;
@@ -1082,7 +1082,7 @@ text-align: center;
 
 
 .cash_info {
-    background: url(./chowon_files/img/ask/cash_info_btn.png) center;
+    background: url(./img/ask/cash_info_btn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 40px;
@@ -1106,7 +1106,7 @@ text-align: center;
 
 
 .camera_btn {
-    background: url(./chowon_files/img/ask/camera_png.png) center;
+    background: url(./img/ask/camera_png.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -1138,7 +1138,7 @@ text-align: center;
 
 
 #user_show_profile {
-    background: url(./chowon_files/img/ask/notice_png.png) center;
+    background: url(./img/ask/notice_png.png) center;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: left;
@@ -1281,7 +1281,7 @@ text-align: center;
 
 
 .share_btn {
-    background: url(./chowon_files/img/share_btn.png) center;
+    background: url(./img/share_btn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 38px 38px;
@@ -1297,7 +1297,7 @@ text-align: center;
 }
 
 .share_btn_on {
-    background: url(./chowon_files/img/share_btn_on.png) center;
+    background: url(./img/share_btn_on.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 38px 38px;
@@ -1316,7 +1316,7 @@ text-align: center;
 }
 
 .share_div{
-    background: url(./chowon_files/img/share_div.png) center;
+    background: url(./img/share_div.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 360px 70px;
@@ -1442,7 +1442,7 @@ border-right: 2px solid #d9d9d9;*/
     background-color: #fff;
     display: inline-block;
     margin-left: -5;
-    background-image: url(./chowon_files/img/userimage.png);
+    background-image: url(./img/userimage.png);
     background-size: 37px 37px;
 }
 
@@ -1455,7 +1455,7 @@ border-right: 2px solid #d9d9d9;*/
     display: inline-block;
     float: right;
     right: 10px;
-    background-image: url(./chowon_files/img/userimage.png);
+    background-image: url(./img/userimage.png);
     background-size: 37px 37px;
 }
 
@@ -1487,7 +1487,7 @@ border-right: 2px solid #d9d9d9;*/
     float: right;
     width: 20px;
     height: 20px;
-    background-image: url(./chowon_files/img/close.png);
+    background-image: url(./img/close.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: -4;
@@ -1495,7 +1495,7 @@ border-right: 2px solid #d9d9d9;*/
 .delete_ask {
 	position:relative;
     float: right;
-	width:20px;height:20px;background-image:url(./chowon_files/img/delete_ask.png);
+	width:20px;height:20px;background-image:url(./img/delete_ask.png);
 	background-repeat:no-repeat;
 	background-size: 100%;
     margin-bottom: -4;
@@ -1515,7 +1515,7 @@ border-right: 2px solid #d9d9d9;*/
     height: 20px;
     top: -14;
     left: -12;
-    background-image: url(./chowon_files/img/more_ico.png);
+    background-image: url(./img/more_ico.png);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: -4;
@@ -1573,7 +1573,7 @@ border-right: 2px solid #d9d9d9;*/
   left: -20;
   top: -34px;
   transform: translate(-55%, -55%);
-  background: url(./chowon_files/img/heart.png) no-repeat;
+  background: url(./img/heart.png) no-repeat;
   background-position: 0 0;
   cursor: pointer;
   -webkit-transform: scale(0.55);
@@ -1613,7 +1613,7 @@ border-right: 2px solid #d9d9d9;*/
     width: 20px;
     height: 20px;
     position: absolute;
-    background: url(./chowon_files/img/ask/macaron-color-png.png);
+    background: url(./img/ask/macaron-color-png.png);
     background-repeat: no-repeat;
     background-size: 20px;
     margin-left: 70px;
@@ -1631,7 +1631,7 @@ border-right: 2px solid #d9d9d9;*/
     position: absolute;
     float: right;
     right: 20px;
-    background: url(./chowon_files/img/ask/ok_keep_img.png);
+    background: url(./img/ask/ok_keep_img.png);
     background-repeat: no-repeat;
     background-size: 70px;
     margin-top: 7px;
@@ -1644,7 +1644,7 @@ border-right: 2px solid #d9d9d9;*/
     height: 60px;
     position: relative;
     border: 0px;
-    background: url(./chowon_files/img/ask/peep_image_non.png);
+    background: url(./img/ask/peep_image_non.png);
     background-repeat: no-repeat;
     background-size: 300px;
     margin-top: 12px;
@@ -1657,7 +1657,7 @@ border-right: 2px solid #d9d9d9;*/
     height: 60px;
     position: relative;
     border: 0px;
-    background: url(./chowon_files/img/ask/peep_image.png);
+    background: url(./img/ask/peep_image.png);
     background-repeat: no-repeat;
     background-size: 230px;
     margin-top: 12px;
@@ -1706,7 +1706,7 @@ border-right: 2px solid #d9d9d9;*/
     background-color: #fff;
     display: inline-block;
 	margin-left: 2;
-    background-image: url(.img/userimage.png);
+    background-image: url(./img/userimage.png);
     background-size: 40px 40px;
 }
 
@@ -1715,7 +1715,7 @@ border-right: 2px solid #d9d9d9;*/
     width: 13px;
     height: 13px;
     display: inline-block;
-    background-image: url(./chowon_files/img/certification.png);
+    background-image: url(./img/certification.png);
     background-size: 13px 13px;
 }
 
@@ -1770,7 +1770,7 @@ border-right: 2px solid #d9d9d9;*/
     height: 40px;
     border-radius: 35px;
     display: inline-block;
-    background-image: url(./chowon_files/img/an.png);
+    background-image: url(./img/an.png);
     background-size: 40px 40px;
 }
 
@@ -1779,12 +1779,12 @@ border-right: 2px solid #d9d9d9;*/
     height: 30px;
     border-radius: 35px;
     margin: 15 auto 0;
-    background-image: url(./chowon_files/img/more.gif);
+    background-image: url(./img/more.gif);
     background-size: 30px 30px;
 }
 
 .reject_btn {
-    background: url(./chowon_files/img/reject_btn.png) center;
+    background: url(./img/reject_btn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 80px;
@@ -1796,7 +1796,7 @@ border-right: 2px solid #d9d9d9;*/
 }
 
 .answer_delete_btn {
-    background: url(./chowon_files/img/answer_delete_btn.png) center;
+    background: url(./img/answer_delete_btn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 80px;
@@ -1808,7 +1808,7 @@ border-right: 2px solid #d9d9d9;*/
 }
 
 .ask_answer_btn {
-    background: url(./chowon_files/img/ask_answer_btn.png) center;
+    background: url(./img/ask_answer_btn.png) center;
     float: left;
     background-repeat: no-repeat;
     background-size: 80px;
@@ -1820,7 +1820,7 @@ border-right: 2px solid #d9d9d9;*/
 }
 
 .ask_asnwer_bottom_btn {
-    background: url(./chowon_files/img/ask_answer_btn.png) center;
+    background: url(./img/ask_answer_btn.png) center;
     float: right;
     background-repeat: no-repeat;
     background-size: 80px;
@@ -1971,7 +1971,7 @@ margin-bottom:8px;
 }
 
 .ad_close_btn2 {
-    background: url(./chowon_files/img/ad_close2.png) no-repeat 0 0;
+    background: url(./img/ad_close2.png) no-repeat 0 0;
     background-size: 22px 22px;
     width: 22px;
     height: 22px;
@@ -2177,14 +2177,14 @@ margin-bottom:8px;
     outline-style: none;
 }
 .fwmoff {
-    background: url(./chowon_files/img/fwmoff.png);
+    background: url(./img/fwmoff.png);
     background-repeat: no-repeat;
     background-size: 68px;
     background-position: 0;
 }
 
 .fwmon {
-	background: url(./chowon_files/img/fwon.png);
+	background: url(./img/fwon.png);
     background-repeat: no-repeat;
     background-size: 68px;
     background-position: 0;
@@ -2202,7 +2202,7 @@ margin-bottom:8px;
 }
 
 .my_frinds{
-	background: url(./chowon_files/img/my_frinds.png) center;
+	background: url(./img/my_frinds.png) center;
     float: right;
     background-repeat: no-repeat;
     background-size: 23px 17px;
