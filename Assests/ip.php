@@ -1,0 +1,1 @@
+<body> Your IP Address is: <? echo $_SERVER["REMOTE_ADDR"]; ?> </body>
