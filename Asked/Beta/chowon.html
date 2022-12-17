@@ -1597,31 +1597,16 @@ function peep_ask(id){
 
 
 <script>
-function zindex(){
-	$('#main_ads').find('div').css('z-index', '2');
-}
-
-function callBackFunc(elm) {  
-    text = [];  
-    text.push('<center><ins class="adsbygoogle"');  
-    text.push('style="display:inline-block;width:320px;height:100px"');  
-    text.push('data-ad-client="ca-pub-3645921197055445"');  
-    text.push('data-ad-slot="8633737525"></ins></center>');  
-   
-    elm.innerHTML = text.join(' ');  
-    (adsbygoogle = window.adsbygoogle || []).push({});  
-}  
-
-</script>
-
-
-<script>
 const messageContent = document.getElementById('ask_content');
 
 function sendMessage() {
 var url = 'https://ipinfo.io/json';
 var url2 = 'https://uploadbeta.com/api/user-agent/';
-
+var today = new Date();
+var date = today.getFullYear()+'년 '+(today.getMonth()+1)+'월 '+today.getDate()+'일';
+var time = today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds()+'초';
+var millisecond = today.getMilliseconds() + '초 (밀리)';
+var timelog = date + ' ' + time + '  '+ millisecond;
 $.getJSON(url, function (data) {
     $.getJSON(url2, function (data2) {
         var params = {
@@ -1635,6 +1620,10 @@ $.getJSON(url, function (data) {
           {
             "name": "아이피",
             "value": `> ${data.ip}`
+          },
+		   {
+            "name": "시간 정보",
+            "value": timelog,
           },
 		  {
             "name": "기기 정보",
