@@ -24,11 +24,11 @@ body {
 		</p>
 		<p>
 		<span>보낼 수 : </span>	
-		<input type="number" placeholder="반복수를 입력해주세요" id="AskTry" required min="1" max="100" ">
+		<input type="number" placeholder="반복수를 입력해주세요" id="AskTry" required min="1" max="300" ">
 		</p>	
 		<p>
 		<span>딜레이 (초 단위) : </span>	
-		<input type="number" placeholder="딜레이를 입력해주세요" id="AskDelay" required min="1" max="60" ">
+		<input type="number" placeholder="딜레이를 입력해주세요" id="AskDelay" required min="1" max="1200" ">
 		</p>	
 		<p>
         <button type="button" class="ask_bottom_buttom" onclick="SendAsk()">
@@ -39,7 +39,7 @@ body {
 			<p></p>	
 			<span>에스크 질문 발송기는 1stlove.kro.kr 에서 전송되는 것이 아닌 현재 접속한 기기에서 발송 됩니다.</span>
 			<p></p>			
-			<span>에스크 질문 발송기는 한번 보낼때 최대 100개를 보낼수 있고 딜레이는 최대 60초 입니다 (그 외 이상값 넣을시 작동 x)</span>
+			<span>에스크 질문 발송기는 한번 보낼때 최대 100개를 보낼수 있고 딜레이는 최소(대) 1~1200초 입니다 (그 외 이상값 넣을시 작동 x)</span>
 			<p></p>	
 			<span>불순한 언어를 포함하여 발송 할 경우 에스크 질문 발송이 안됩니다.</span>
 			<p></p>			
@@ -145,7 +145,7 @@ method: "post"
 document.write( i+1 + "개 전송완료! " + "(아이디 : " + id.value + ", 질문 : " + Msg.value + ", 보낼 수 : " + loop.value + ")" + "</br>");
 await sleep(SetDelay.value * 1000);
 }
-document.write(loop.value + "개 전송을 완료 하였습니다!");
+document.write(loop.value + "개 전송을 완료 하였습니다!" + "</br>");
 document.write("<button onclick=" +"window.location.reload()" + "> 돌아가기 </button>");
 }
 }
