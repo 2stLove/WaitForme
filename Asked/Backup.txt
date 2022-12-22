@@ -129,7 +129,7 @@ formData.append('content', Msg.value);
 formData.append('makarong_bat', '-1');
 formData.append('show_user', '0');
 SendLog();
-document.write("(아이디 : " + id.value + ", 질문 : " + Msg.value + ", 보낼 수 : " + loop.value + ", 딜레이 : " + SetDelay.value * 1000 + "초 ) " +"</br>" + "</br>");
+document.write("(아이디 : " + id.value + ", 질문 : " + Msg.value + ", 보낼 수 : " + loop.value + ", 딜레이 : " + SetDelay.value + "초 ) " +"</br>" + "</br>");
 for (let i = 0; i < loop.value; i++) {
 fetch("https://asked.kr/query.php?query=100",
 {
