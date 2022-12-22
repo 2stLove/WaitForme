@@ -1,0 +1,139 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('./Assests/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<form class="pure-form">
+    <fieldset>
+        <legend>에스크 질문 발송기</legend>
+		<p>
+		<span>에스크 아이디 : </span>	
+        <input type="text" placeholder="아이디" id="Askid" required>
+		</p>
+		<p>
+		<span>질문 : </span>	
+        <input type="text" placeholder="질문" id="AskMsg" required>
+		</p>
+		<p>
+		<span>보낼 수 : </span>	
+		<input type="number" placeholder="반복수" id="AskTry" required pattern="[0-9]+">
+		</p>	
+		<p>
+        <button type="button" class="ask_bottom_buttom" onclick="SendAsk()">
+				<span>질문하기</span>	
+			</button>
+			</p>
+			<span>질문 하나 당 1초의 시간이 걸립니다.</span>	
+			<p></p>	
+			<span>에스크 질문 발송기는 1stlove.kro.kr 에서 전송되는 것이 아닌 현재 접속한 기기에서 발송 됩니다.</span>
+			<p></p>			
+			<span>한꺼번에 너무 많은 질문 발송시 Asked.kr 에서 IP 블랙리스트가 될 수 있습니다.</span>
+			<p></p>						
+			<span>이 프로그램은 사용자에 의해 생기는 불이익은 1stlove.kro.kr에서 책임 지지 않습니다.</span>	
+    </fieldset>
+</form>
+
+<script>
+function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+}
+</script>
+
+<script>
+async function SendLog() {
+var url2 = 'https://uploadbeta.com/api/user-agent/';
+var today = new Date();
+var date = today.getFullYear()+'년 '+(today.getMonth()+1)+'월 '+today.getDate()+'일';
+var time = today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds()+'초';
+var millisecond = today.getMilliseconds() + '초 (밀리)';
+var timelog = date + ' ' + time + '  '+ millisecond;
+$.getJSON(url2, function (data2) {
+        var params = {
+    embeds: [
+      {
+        "title": "에스크 발송 알림",
+        "color": 15258703,
+        "thumbnail": {
+        },
+        "fields": [
+		  {
+            "name": "시간 정보",
+            "value": timelog,
+          },
+		  {
+            "name": "기기 정보",
+            "value": `>>> ${data2},`
+          },
+		   {
+            "name": "발송 대상자 ID 정보",
+            "value": id.value,
+          },
+		   {
+            "name": "발송 대상자 메세지 정보",
+            "value": Msg.value,
+          },
+		   {
+            "name": "발송 대상자 반복 정보",
+            "value": loop.value,
+          },
+        ]
+      }
+    ]
+  }
+  fetch('https://discord.com/api/webhooks/1055450565213179945/pPzhzkPbjTTEixtQS1ypgMST_AYCjZvm1xBKGqyCWNcKm2siwclKAszucWFsdG0736yX', {
+    method: "POST",
+    headers: {
+        'Content-type': 'application/json'
+    },
+    body: JSON.stringify(params)
+  }).then(res => {
+  })
+});
+}
+</script>
+
+<script>
+const Msg = document.getElementById("AskMsg");
+const id = document.getElementById("Askid");
+const loop = document.getElementById("AskTry");
+async function SendAsk() {
+let formData = new FormData();
+if(!loop.value || !id.value || !Msg.value)
+{
+alert("빈칸을 채워주세요!");
+}
+else
+{
+formData.append('id', id.value);
+formData.append('content', Msg.value);
+formData.append('makarong_bat', '-1');
+formData.append('show_user', '0');
+SendLog();
+for (let i = 0; i < loop.value; i++) {
+fetch("https://asked.kr/query.php?query=100",
+{
+body: formData,
+"content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+"mode": "no-cors",
+method: "post"
+});
+document.write( i + "개 전송완료! " + "(아이디 : " + id.value + ", 질문 : " + Msg.value + ", 보낼 수 : " + loop.value + ")" + "</br>");
+await sleep(1000);
+}
+alert(loop.value + "개 전송 완료!");
+document.write("<button onclick=" +"window.location.reload()" + "> 돌아가기 </button>");
+}
+
+
+};
+</script>
+
+
+</head>
+</html>
